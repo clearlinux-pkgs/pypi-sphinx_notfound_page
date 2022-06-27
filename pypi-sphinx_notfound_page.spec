@@ -4,7 +4,7 @@
 #
 Name     : pypi-sphinx_notfound_page
 Version  : 0.8
-Release  : 2
+Release  : 3
 URL      : https://files.pythonhosted.org/packages/22/6f/15b7e282997c4a0e7273c8751dea84a673055624bae94a3c413e37284bbc/sphinx-notfound-page-0.8.tar.gz
 Source0  : https://files.pythonhosted.org/packages/22/6f/15b7e282997c4a0e7273c8751dea84a673055624bae94a3c413e37284bbc/sphinx-notfound-page-0.8.tar.gz
 Summary  : Sphinx extension to build a 404 page with absolute URLs
@@ -59,7 +59,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1653059927
+export SOURCE_DATE_EPOCH=1656369958
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -97,7 +97,7 @@ export FCFLAGS="$FCFLAGS -m64 -march=x86-64-v3 "
 export LDFLAGS="$LDFLAGS -m64 -march=x86-64-v3 "
 python3 -tt setup.py build install --root=%{buildroot}-v3
 popd
-/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot}/usr/share/clear/optimized-elf/ %{buildroot}/usr/share/clear/filemap/filemap-%{name}
+/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot} %{buildroot}/usr/share/clear/filemap/filemap-%{name}
 
 %files
 %defattr(-,root,root,-)
