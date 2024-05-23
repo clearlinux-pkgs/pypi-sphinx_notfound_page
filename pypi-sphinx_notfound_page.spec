@@ -6,10 +6,10 @@
 # autospec commit: 5905be9
 #
 Name     : pypi-sphinx_notfound_page
-Version  : 1.0.1
-Release  : 14
-URL      : https://files.pythonhosted.org/packages/46/33/900a1e9f596bc85f95a9afeeda47cbf5eb8c4be6c73f8fd2dd0ddf2fc56b/sphinx_notfound_page-1.0.1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/46/33/900a1e9f596bc85f95a9afeeda47cbf5eb8c4be6c73f8fd2dd0ddf2fc56b/sphinx_notfound_page-1.0.1.tar.gz
+Version  : 1.0.2
+Release  : 15
+URL      : https://files.pythonhosted.org/packages/a5/7b/9bc31e4ca0e54d811962be133920560ebe82b0d85ea9e0e4740330399613/sphinx_notfound_page-1.0.2.tar.gz
+Source0  : https://files.pythonhosted.org/packages/a5/7b/9bc31e4ca0e54d811962be133920560ebe82b0d85ea9e0e4740330399613/sphinx_notfound_page-1.0.2.tar.gz
 Summary  : Sphinx extension to build a 404 page with absolute URLs
 Group    : Development/Tools
 License  : MIT
@@ -56,10 +56,10 @@ python3 components for the pypi-sphinx_notfound_page package.
 
 
 %prep
-%setup -q -n sphinx_notfound_page-1.0.1
-cd %{_builddir}/sphinx_notfound_page-1.0.1
+%setup -q -n sphinx_notfound_page-1.0.2
+cd %{_builddir}/sphinx_notfound_page-1.0.2
 pushd ..
-cp -a sphinx_notfound_page-1.0.1 buildavx2
+cp -a sphinx_notfound_page-1.0.2 buildavx2
 popd
 
 %build
@@ -67,7 +67,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1716394299
+export SOURCE_DATE_EPOCH=1716483099
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
