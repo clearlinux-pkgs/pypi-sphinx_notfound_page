@@ -7,7 +7,7 @@
 #
 Name     : pypi-sphinx_notfound_page
 Version  : 1.1.0
-Release  : 19
+Release  : 20
 URL      : https://files.pythonhosted.org/packages/6a/b2/67603444a8ee97b4a8ea71b0a9d6bab1727ed65e362c87e02f818ee57b8a/sphinx_notfound_page-1.1.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/6a/b2/67603444a8ee97b4a8ea71b0a9d6bab1727ed65e362c87e02f818ee57b8a/sphinx_notfound_page-1.1.0.tar.gz
 Summary  : Sphinx extension to build a 404 page with absolute URLs
